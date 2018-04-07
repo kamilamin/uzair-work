@@ -7,14 +7,12 @@ import Drawer from 'material-ui/Drawer';
 import {Card, CardHeader } from 'material-ui/Card';
 import { List, ListItem } from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import { blue500 } from 'material-ui/styles/colors';
 import Person from 'material-ui/svg-icons/social/person';
 import Avatar from 'material-ui/Avatar';
 import { NavLink } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
 import Logout from 'material-ui/svg-icons/action/power-settings-new';
-import list from './banquetList';
 
 const logoutStyles = {
     marginTop: 265
@@ -25,7 +23,7 @@ const dividerStyle = {
 }
 
 
-class app extends Component{
+class PB extends Component{
     constructor() {
         super();
         this.state = {
@@ -45,7 +43,7 @@ class app extends Component{
         return (
             <MuiThemeProvider>
                 <div>
-                <AppBar title='Welcome to Banquet App'  onLeftIconButtonTouchTap={() => this._toggleDrawer()} style={{marginLeft: '-12%', width: '123.5%'}} />
+                <AppBar title='Welcome to Pearl Banquet'  onLeftIconButtonTouchTap={() => this._toggleDrawer()} style={{marginLeft: '-12%', width: '123.5%'}} />
                     <Drawer open={this.state.drawerOpened} docked={false} onRequestChange={() => this._toggleDrawer()}>
                         <List>
                                     <Card>
@@ -70,4 +68,4 @@ function mapStateToProps(state){
     return {}
 }
 
-export default connect(mapStateToProps, null) (app);
+export default connect(mapStateToProps, null) (PB);
