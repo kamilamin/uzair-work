@@ -10,7 +10,7 @@ import Divider from 'material-ui/Divider';
 import { blue500 } from 'material-ui/styles/colors';
 import Person from 'material-ui/svg-icons/social/person';
 import Avatar from 'material-ui/Avatar';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
 import Logout from 'material-ui/svg-icons/action/power-settings-new';
 import list from './banquetList';
@@ -109,7 +109,7 @@ class NMG extends Component{
                                     <input style={{width: 300}} type="date" value={ Booking_Date } onChange={(event) => this.setState({ Booking_Date : event.target.value})} />
                                 </label>
                             </div>
-                            <RaisedButton to='/patient' label='Submit' fullWidth={false} primary={true} style={{ marginTop: 25, marginLeft: '40%'}} onClick={this.submitCustomer}/>
+                            <RaisedButton label='Submit' fullWidth={false} primary={true} style={{ marginTop: 25, marginLeft: '40%'}} onClick={this.submitCustomer}/>
                     </div>
                 </div>
             </MuiThemeProvider>

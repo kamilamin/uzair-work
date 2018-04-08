@@ -11,7 +11,7 @@ import ActionAssignment from 'material-ui/svg-icons/action/assignment';
 import { blue500 } from 'material-ui/styles/colors';
 import Person from 'material-ui/svg-icons/social/person';
 import Avatar from 'material-ui/Avatar';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import FlatButton from 'material-ui/FlatButton';
 import Logout from 'material-ui/svg-icons/action/power-settings-new';
 import list from './banquetList';
